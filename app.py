@@ -5,8 +5,8 @@ import torch
 app = Flask(__name__, static_folder='static', template_folder='templates')
 
 # Load the saved model and tokenizer
-model = T5ForConditionalGeneration.from_pretrained('./static')
-tokenizer = T5Tokenizer.from_pretrained('./static')
+model = T5ForConditionalGeneration.from_pretrained('../Transliteration_Prototype-master')
+tokenizer = T5Tokenizer.from_pretrained('../Transliteration_Prototype-master')
 
 # Ensure the model is in evaluation mode
 model.eval()
